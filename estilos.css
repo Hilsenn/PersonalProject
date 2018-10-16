@@ -77,3 +77,33 @@ transition: width .3s
     transition: width .3s;
 
 }
+.ellipse{
+    border-radius: 100%;
+    position: absolute;
+    top:0;
+    margin-left: 35%;
+    margin-top: 6%;
+    border-style: solid;
+}
+
+.ellipse-outer-thin{
+width: 30%;
+height: 60%;
+border-width: 1px;
+border-color: rgba(6, 0, 0, .3);
+animation: ellipseOrbit 15s ease-in-out infinite;
+}
+
+.ellipse-outer-thin:after{
+    content: "";
+    background-image: url(https://s29.postimg.org/5h0r4ftkn/ellipses_dial.png);
+    background-repeat: no-repeat;
+    background-position: center;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     color: #000;
+     position: absolute;
+     opacity:.3;
+}
