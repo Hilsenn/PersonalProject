@@ -89,8 +89,8 @@ transition: width .3s
 .ellipse-outer-thin{
 width: 30%;
 height: 60%;
-border-width: 1px;
-border-color: rgba(6, 0, 0, .3);
+border-width: 2px;
+border-color: rgba(255, 255, 255, 0.3);
 animation: ellipseOrbit 15s ease-in-out infinite;
 }
 
@@ -101,9 +101,60 @@ animation: ellipseOrbit 15s ease-in-out infinite;
     background-position: center;
      top: 0;
      left: 0;
-     bottom: 0;
+     bottom: 0; 
      right: 0;
-     color: #000;
+     color: rgb(197, 21, 21);
      position: absolute;
      opacity:.3;
+}
+
+.ellipse.outer-thick{
+    width: 99.5%;
+    height: 99.5%;
+    border-color: rgb(206, 204, 211);
+border-width: 2px;
+transform: rotate(-45deg);
+animation: ellipseRotate 15s ease-in-out infinite;
+}
+
+.ellipse-orbit{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-width: 2px;
+    border-color: rgb(186, 188, 201);
+    top: 5rem;
+    right: 0rem;
+    margin-left: 100px;
+
+}
+
+.ellipse-orbit:before{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #d3d3d3;
+    margin: 0 auto;
+    left: 0;
+     right: 0;
+     position: absolute;
+     top: 40%;
+}
+
+@keyframes ellipseRotate{
+    0%{
+        transform: rotate(-45deg);
+    }
+    100%{
+         transform: rotate(-405deg);
+    }
+}@keyframes ellipseOrbit{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+         transform: rotate(360deg);
+       
+    }
 }
