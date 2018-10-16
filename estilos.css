@@ -57,7 +57,7 @@ li a{
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 28px;
     padding: 0 20px;
@@ -118,14 +118,29 @@ animation: ellipseRotate 15s ease-in-out infinite;
 }
 
 .ellipse-orbit{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border-width: 2px;
     border-color: rgb(186, 188, 201);
-    top: 5rem;
+    top: 6rem;
     right: 0rem;
     margin-left: 100px;
+    background: linear-gradient(-45deg, rgb(70, 45, 38), rgb(88, 18, 45), rgb(24, 71, 88), rgb(14, 78, 63), rgb(36, 14, 78), rgb(22, 78, 14)  );
+background-size: 600% 600%;
+background-repeat: no-repeat;
+animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
 
+    }100%{
+        background-position: 0% 50%;
+    }
+}
 }
 
 .ellipse-orbit:before{
@@ -144,17 +159,17 @@ animation: ellipseRotate 15s ease-in-out infinite;
 
 @keyframes ellipseRotate{
     0%{
-        transform: rotate(-45deg);
-    }
-    100%{
-         transform: rotate(-405deg);
-    }
-}@keyframes ellipseOrbit{
-    0%{
-        transform: rotate(0deg);
+        transform: rotate(90deg);
     }
     100%{
          transform: rotate(360deg);
+    }
+}@keyframes ellipseOrbit{
+    0%{
+        transform: rotate(110deg);
+    }
+    100%{
+         transform: rotate(470deg);
        
     }
 }
