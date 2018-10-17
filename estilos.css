@@ -57,7 +57,7 @@ li a{
     text-decoration: none;
     color: #fff;
     display: inline-block;
-    font-family: 'Niramit', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: lighter;
     font-size: 28px;
     padding: 0 20px;
@@ -76,4 +76,102 @@ transition: width .3s
     width: 100%;
     transition: width .3s;
 
+}
+.ellipse{
+    border-radius: 100%;
+    position: absolute;
+    top:0;
+    margin-left: 35%;
+    margin-top: 6%;
+    border-style: solid;
+}
+
+.ellipse-outer-thin{
+width: 30%;
+height: 60%;
+border-width: 2px;
+border-color: rgba(255, 255, 255, 0.3);
+animation: ellipseOrbit 15s ease-in-out infinite;
+}
+
+.ellipse-outer-thin:after{
+    content: "";
+    background-image: url(https://s29.postimg.org/5h0r4ftkn/ellipses_dial.png);
+    background-repeat: no-repeat;
+    background-position: center;
+     top: 0;
+     left: 0;
+     bottom: 0; 
+     right: 0;
+     color: rgb(197, 21, 21);
+     position: absolute;
+     opacity:.3;
+     
+}
+
+.ellipse.outer-thick{
+    width: 99.5%;
+    height: 99.5%;
+    border-color: rgb(206, 204, 211);
+border-width: 2px;
+transform: rotate(-45deg);
+animation: ellipseRotate 15s ease-in-out infinite;
+
+}
+
+.ellipse-orbit{
+    width: 2rem;
+    height: 2rem;
+    border-width: 2px;
+    border-color: rgb(186, 188, 201);
+    top: 6rem;
+    right: 0rem;
+    margin-left: 100px;
+    background: linear-gradient(-45deg, rgb(70, 45, 38), rgb(88, 18, 45), rgb(24, 71, 88), rgb(14, 78, 63), rgb(36, 14, 78), rgb(22, 78, 14)  );
+background-size: 600% 600%;
+background-repeat: no-repeat;
+animation: Gradient 15s ease infinite;
+}
+@-webkit-keyframes Gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+
+    }100%{
+        background-position: 0% 50%;
+    }
+}
+}
+
+.ellipse-orbit:before{
+    content: '';
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #d3d3d3;
+    margin: 0 auto;
+    left: 0;
+     right: 0;
+     position: absolute;
+     top: 40%;
+}
+
+@keyframes ellipseRotate{
+    0%{
+        transform: rotate(90deg);
+    }
+    100%{
+         transform: rotate(360deg);
+    }
+}@keyframes ellipseOrbit{
+    0%{
+        transform: rotate(110deg);
+    }
+    100%{
+         transform: rotate(470deg);
+       
+    }
 }
