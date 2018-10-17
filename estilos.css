@@ -106,6 +106,7 @@ animation: ellipseOrbit 15s ease-in-out infinite;
      color: rgb(197, 21, 21);
      position: absolute;
      opacity:.3;
+     
 }
 
 .ellipse.outer-thick{
@@ -115,6 +116,7 @@ animation: ellipseOrbit 15s ease-in-out infinite;
 border-width: 2px;
 transform: rotate(-45deg);
 animation: ellipseRotate 15s ease-in-out infinite;
+
 }
 
 .ellipse-orbit{
