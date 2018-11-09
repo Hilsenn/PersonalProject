@@ -8,7 +8,7 @@
     overflow: hidden;
     text-align: center;
     padding: 60px;
-     background: #282828;
+     background: #282828;   
 }
 .team-section h1{
     text-transform: uppercase;
@@ -65,7 +65,9 @@ filter: none;
     height: auto;
     
 }
-
+.title{
+    margin-right: 13%;
+}
 .name{
     display: block;
     margin-bottom: 30px;
@@ -74,3 +76,55 @@ filter: none;
     font-size: 22px;
 
 }
+.nav{
+}
+.nav *{
+    box-sizing: border-box;
+    transition: all 0.35s ease;
+}
+
+.nav li{
+    display: inline-block;
+    list-style: outside none none;
+    margin:.5em 1em;
+    padding: 0;
+    font-size: 28px;
+    float: left;
+    letter-spacing: 3px;
+}
+.nav a{
+    padding: .5em 0.8em;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
+    text-decoration: none;
+}
+.nav a:before,
+.nav a:after{
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    opacity: 0;
+}
+
+.nav a:before{
+    right: 0;
+    top: 0;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    transform:translate(-100%, 50%);
+}
+
+.nav a:after{
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: translate(100%, -50%);
+}
+a:hover:before,
+a:hover:after{
+transform: translate(0%, 0%);
+opacity: 1;
+} 
