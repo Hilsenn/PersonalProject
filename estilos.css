@@ -12,7 +12,8 @@ body{
     transform-style: preserve-3d;
     overflow-y: scroll;
     overflow-x: hidden;
-    background-size: cover;
+     background-color: #423535;
+
 }
 header{
     box-sizing: border-box;
@@ -89,11 +90,13 @@ header *{
     list-style: outside none none;
     margin:.5em 1em;
     padding: 0;
+    outline: none;
 }
 .nav a{
     padding: .5em 0.8em;
     color: rgba(255, 255, 255, 0.5);
     position: relative;
+    outline: none;
 }
 .nav a:before,
 .nav a:after{
@@ -139,62 +142,81 @@ li a{
     padding: 0 20px;
 }
 .container{
-  height: 100em;
-  z-index: 1;
-  width: 100vw;
-    background-color: #000;
-
-}
-
-.content p{
-    margin-left: 10%;
-  padding-top: 500px;
-  height: 100%;
-  width: 80%;
-    font-size: 16px;
-    color: #fff;
-    text-align: center;
-}
-
-.caja1{
-  background-image: url('C:/Users/marti/Documents/GitHub/ProyectoAlumno/Menu/Media/SunsetBeta.jpg');
-  width: 100vw;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.caja1{
-    box-sizing: border-box;
-    min-height:100vh;
-    padding: 30vh 0 5vh;
-    transform-style: inherit;
-    width: 100vw;
-}
-.caja1 p{
-    margin-top: -100px;
-}
-.caja1, .caja1:before{
-    background: 50% 50% / cover;
-}
-
-.caja1::before{
-    bottom:0;
-    content: "";
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-image: url('C:/Users/marti/Documents/GitHub/ProyectoAlumno/Menu/Media/SunsetBeta.jpg');
-    background-size: cover;
-    transform-origin: center center 0;
-    transform: translateZ(-1px) scale(2);
+    position: relative;
+  height: 500px;
+  width: 1200px;
+    margin: 100px auto;
+    background-color:transparent;
     z-index: -1;
-    min-height: 100vh;
+    padding: 50px;  
 }
-.caja1 *{
-    font-weight: normal;
-    letter-spacing: 0.2em;
-    text-align: center;
-    margin: 0;
-    padding: 1em 0;
+.container h3{
+    margin-top: 130px;
+   /* margin-bottom: -5px;*/
+    font-size: 50px;
+   font-family: 'Titillium Web', sans-serif;
+}
+.box p{
+font-family: 'Archivo Narrow', sans-serif;
+letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.app{
+    width: 250px;
+    height: 215px;
+}
+.content {  
+  height: 70%;
+}
+.container .box{
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(500px - 30px);
+    background-color: transparent;
+    float:left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+     text-align: center;
+}
+
+.mantente-al-tanto{
+    height: 700px; 
+    width:100%;
+    background-color: #fff;
+    
+}
+.mantente-al-tanto h1{
+   font-family: 'Titillium Web', sans-serif;
+    color: #000;
+   /* margin-left: 30%;*/
+    padding-top: 40px;
+    font-size: 50px;
+} 
+.container2{
+       position: relative;
+  height: 500px;
+  width: 1200px;
+    margin: none;
+    background-color:transparent;
+    z-index: -1;
+    padding: none;
+}
+ .box2{
+    position: relative;
+    width: calc(300px - 40px);
+    height: calc(500px - 30px);
+    background-color: transparent;
+    float:left;
+    margin: 55px;
+    box-sizing: border-box;
+    overflow: hidden;
+     text-align: center;
+}
+.box2 p{
+font-family: 'Archivo Narrow', sans-serif;
+letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 15px;
 }
